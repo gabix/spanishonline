@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+include_once("inclu/config.php");
 include_once("inclu/lang.php");
 include_once("leng/" . $lang . ".php");
 
@@ -8,8 +9,8 @@ include_once("leng/" . $lang . ".php");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Spanish Online</title>
-    <meta name="description" content="aprendizaje de espa&ntilde;ol, learning spanish" />
+    <title><?php echo $title ?></title>
+    <meta name="description" content="aprendizaje de espa&ntilde;ol, spanish learning" />
     <meta name="keywords" content="espa&ntilde;ol, spanish, learning, aprender, aprendizaje, spanish online" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -21,31 +22,31 @@ include_once("leng/" . $lang . ".php");
     <div id="d_tarj">
         <div id="d_icos">
             <a href="#" onclick="icoclick(0); return false;" id="ico0" class="select b_ico" title="<?php echo $l_icos['bot_inicio']; ?>">
-                <img class="im_ico" src="img/home.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
+                <img class="im_ico" src="img/student72.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
             <a href="#" onclick="icoclick(1); return false;" id="ico1" class="b_ico" title="<?php echo $l_icos['bot_curs']; ?>">
-                <img class="im_ico" src="img/edit-4.png" alt="<?php echo $l_icos['bot_curs']; ?>" /></a>
+                <img class="im_ico" src="img/seat7.png" alt="<?php echo $l_icos['bot_curs']; ?>" /></a>
             <a href="#" onclick="icoclick(2); return false;" id="ico2" class="b_ico" title="<?php echo $l_icos['bot_prof']; ?>">
-                <img class="im_ico" src="img/apple.png" alt="<?php echo $l_icos['bot_prof']; ?>" /></a>
+                <img class="im_ico" src="img/fruit106.png" alt="<?php echo $l_icos['bot_prof']; ?>" /></a>
             <a href="#" onclick="icoclick(3); return false;" id="ico3" class="b_ico" title="<?php echo $l_icos['bot_cont']; ?>">
-                <img class="im_ico" src="img/cont.png" alt="<?php echo $l_icos['bot_cont']; ?>" /></a>
+                <img class="im_ico" src="img/speechballoon8.png" alt="<?php echo $l_icos['bot_cont']; ?>" /></a>
         </div>
 
         <div id="d_cont0" class="d_contenido">
-            <h1>Spanish Online</h1>
+            <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php include($l_inicio); ?>
         </div>
 
         <div id="d_cont1" class="d_contenido" style="display:none">
-            <h1>Spanish Online</h1>
+            <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php include($l_curs); ?>
         </div>
 
         <div id="d_cont2" class="d_contenido" style="display:none">
-            <h1>Spanish Online</h1>
+            <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php include($l_prof); ?>
