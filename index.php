@@ -22,7 +22,7 @@ include_once("leng/" . $lang . ".php");
     <div id="d_tarj">
         <div id="d_icos">
             <a href="#" onclick="icoclick(0); return false;" id="ico0" class="select b_ico" title="<?php echo $l_icos['bot_inicio']; ?>">
-                <img class="im_ico" src="img/speechballoon8.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
+                <img class="im_ico" src="img/House_outline_512.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
             <a href="#" onclick="icoclick(1); return false;" id="ico1" class="b_ico" title="<?php echo $l_icos['bot_curs']; ?>">
                 <img class="im_ico" src="img/seat7.png" alt="<?php echo $l_icos['bot_curs']; ?>" /></a>
             <a href="#" onclick="icoclick(2); return false;" id="ico2" class="b_ico" title="<?php echo $l_icos['bot_prof']; ?>">
