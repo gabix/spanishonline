@@ -22,13 +22,13 @@ include_once("leng/" . $lang . ".php");
     <div id="d_tarj">
         <div id="d_icos">
             <a href="#" onclick="icoclick(0); return false;" id="ico0" class="select b_ico" title="<?php echo $l_icos['bot_inicio']; ?>">
-                <img class="im_ico" src="img/student72.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
+                <img class="im_ico" src="img/speechballoon8.png" alt="<?php echo $l_icos['bot_inicio']; ?>" /></a>
             <a href="#" onclick="icoclick(1); return false;" id="ico1" class="b_ico" title="<?php echo $l_icos['bot_curs']; ?>">
                 <img class="im_ico" src="img/seat7.png" alt="<?php echo $l_icos['bot_curs']; ?>" /></a>
             <a href="#" onclick="icoclick(2); return false;" id="ico2" class="b_ico" title="<?php echo $l_icos['bot_prof']; ?>">
                 <img class="im_ico" src="img/fruit106.png" alt="<?php echo $l_icos['bot_prof']; ?>" /></a>
             <a href="#" onclick="icoclick(3); return false;" id="ico3" class="b_ico" title="<?php echo $l_icos['bot_cont']; ?>">
-                <img class="im_ico" src="img/speechballoon8.png" alt="<?php echo $l_icos['bot_cont']; ?>" /></a>
+                <img class="im_ico" src="img/student72.png" alt="<?php echo $l_icos['bot_cont']; ?>" /></a>
         </div>
 
         <div id="d_cont0" class="d_contenido">
