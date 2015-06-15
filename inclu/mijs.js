@@ -1,4 +1,5 @@
-var selectedIco = 0;
+var selectedIco;
+selectedIco = 0;
 
 function icoclick(n) {
     if (n === selectedIco) return; // nothing to do.

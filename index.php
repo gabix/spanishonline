@@ -35,31 +35,31 @@ include_once("leng/" . $lang . ".php");
             <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
-            <?php include($l_inicio); ?>
+            <?php echo $l_inicio; ?>
         </div>
 
         <div id="d_cont1" class="d_contenido" style="display:none">
             <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
-            <?php include($l_curs); ?>
+            <?php echo $l_curs; ?>
         </div>
 
         <div id="d_cont2" class="d_contenido" style="display:none">
             <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
-            <?php include($l_prof); ?>
+            <?php echo $l_prof; ?>
         </div>
 
         <div id="d_cont3" class="d_contenido" style="display:none">
-            <h1>Spanish Online</h1>
+            <h1><?php echo $title ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
-            <?php include($l_cont['html']); ?>
+            <?php echo $l_cont['html']; ?>
             <p class="p_it"><img class="im_contacto" src="img/mail-forward-3.png" alt="E-mail: " /><a href="mailto:veronicahopp@gmail.com?subject=Consulta%20(Ida%20y%20Vuelta%20site)">veronicahopp@gmail.com</a></p>
-            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?php echo $l_cont['tel']; ?>" />(+5411) 69089479</p>
-            <p class="p_it"><img class="im_contacto" src="img/skype.png" alt="Skype: " />veronicahopp</p>
+            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?php echo $l_cont['tel']; ?>" /><?php echo $telefono; ?></p>
+            <p class="p_it"><img class="im_contacto" src="img/skype.png" alt="Skype: " /><?php echo $usuario_skype ?></p>
         </div>
         
         <div id="d_felchitas">
