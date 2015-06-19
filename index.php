@@ -3,7 +3,7 @@ require_once('config'.DIRECTORY_SEPARATOR.'config.php');
 
 $leng = new SelectorDeLenguaje();
 require_once("lenguajes/" . $leng->get_lenguaje() . ".php");
-$datGen = new DatosGenerales();
+$txts = new Textos();
 
 ?>
 <!DOCTYPE html>
@@ -14,9 +14,9 @@ $datGen = new DatosGenerales();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <title><?= $datGen->get('title') ?></title>
-    <meta name="description" content="<?= $datGen->get('description') ?>" />
-    <meta name="keywords" content="<?= $datGen->get('keywords') ?>" />
+    <title><?= $txts->get('title') ?></title>
+    <meta name="description" content="<?= $txts->get('description') ?>" />
+    <meta name="keywords" content="<?= $txts->get('keywords') ?>" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/micss.css" />
@@ -37,34 +37,34 @@ $datGen = new DatosGenerales();
         </div>
 
         <div id="d_cont0" class="d_contenido">
-            <h1><?= $datGen->get('title') ?></h1>
+            <h1><?= $txts->get('title') ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php echo $l_inicio; ?>
         </div>
 
         <div id="d_cont1" class="d_contenido" style="display:none">
-            <h1><?= $datGen->get('title') ?></h1>
+            <h1><?= $txts->get('title') ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php echo $l_curs; ?>
         </div>
 
         <div id="d_cont2" class="d_contenido" style="display:none">
-            <h1><?= $datGen->get('title') ?></h1>
+            <h1><?= $txts->get('title') ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php echo $l_prof; ?>
         </div>
 
         <div id="d_cont3" class="d_contenido" style="display:none">
-            <h1><?= $datGen->get('title') ?></h1>
+            <h1><?= $txts->get('title') ?></h1>
             <h3><?php echo $l_subTit; ?></h3>
             <hr />
             <?php echo $l_cont['html']; ?>
-            <p class="p_it"><img class="im_contacto" src="img/mail-forward-3.png" alt="E-mail: " /><a href="mailto:<?= $datGen->get('mail') ?>?subject=Consulta%20(Ida%20y%20Vuelta%20site)">veronicahopp@gmail.com</a></p>
-            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?php echo $l_cont['tel']; ?>" /><?= $datGen->get('telefono') ?></p>
-            <p class="p_it"><img class="im_contacto" src="img/skype.png" alt="Skype: " /><?= $datGen->get('usuario_skype') ?></p>
+            <p class="p_it"><img class="im_contacto" src="img/mail-forward-3.png" alt="E-mail: " /><a href="mailto:<?= $txts->get('mail') ?>?subject=Consulta%20(Ida%20y%20Vuelta%20site)">veronicahopp@gmail.com</a></p>
+            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?php echo $l_cont['tel']; ?>" /><?= $txts->get('telefono') ?></p>
+            <p class="p_it"><img class="im_contacto" src="img/skype.png" alt="Skype: " /><?= $txts->get('usuario_skype') ?></p>
         </div>
         
         <div id="d_felchitas">

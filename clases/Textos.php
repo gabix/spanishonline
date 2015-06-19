@@ -4,7 +4,7 @@
  * Date: 19/06/15
  * Time: 15:08
  */
-class DatosGenerales {
+class Textos {
 
     /* datos pa tooodo */
     private $title = "Spanish Online";
