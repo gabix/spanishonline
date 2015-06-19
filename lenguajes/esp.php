@@ -55,4 +55,3 @@ $l_cont['html'] = <<<contacto
 contacto;
 
 $l_cont['tel'] = "Tel: ";
-?>
