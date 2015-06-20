@@ -1,10 +1,10 @@
 <?php
 $l_subTit = "Jouw plek om Spaans te leren";
 
-$l_icos['bot_inicio'] = "Home";
-$l_icos['bot_prof'] = "De lerares";
-$l_icos['bot_curs'] = "Lessen";
-$l_icos['bot_cont'] = "Contact";
+$l_botInicio = "Home";
+$l_botProf = "De lerares";
+$l_botCurs = "Lessen";
+$l_botCont = "Contact";
 
 $l_inicio = <<<inicio
 <p>Welkom!</p>
@@ -47,10 +47,10 @@ $l_curs = <<<cursos
 <p> Voor vragen over prijzen en speciale pakketten kunt u <a href="#" onclick="icoclick(3); return false;">contact</a> opnemen</p>
 cursos;
 
-$l_cont['html'] = <<<contacto
+$l_contacto = <<<contacto
 <h4>Meer informatie?</h4>
 <p>Neem gerust contact met me op.</p>
 <br /><br /><br />
 contacto;
 
-$l_cont['tel'] = "Telefoon: ";
+$l_tel = "Telefoon: ";

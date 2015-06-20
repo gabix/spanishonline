@@ -1,10 +1,10 @@
 <?php
 $l_subTit = "tu lugar para aprender espa&ntilde;ol";
 
-$l_icos['bot_inicio'] = "Inicio";
-$l_icos['bot_prof'] = "Sobre la profesora";
-$l_icos['bot_curs'] = "Cursos";
-$l_icos['bot_cont'] = "Contacto";
+$l_botInicio = "Inicio";
+$l_botProf = "Sobre la profesora";
+$l_botCurs = "Cursos";
+$l_botCont = "Contacto";
 
 $l_inicio = <<<inicio
 <p>&iexcl;Bienvenido/a!</p>
@@ -48,10 +48,10 @@ $l_curs = <<<cursos
 <p><a href="#" onclick="icoclick(3); return false;">Cons&uacute;ltame</a> sobre precios y paquetes especiales.</p>
 cursos;
 
-$l_cont['html'] = <<<contacto
+$l_contacto = <<<contacto
 <h4>&iquest;M&aacute;s informaci&oacute;n?</h4>
 <p>No dudes en contactarme.</p>
 <br /><br /><br />
 contacto;
 
-$l_cont['tel'] = "Tel: ";
+$l_tel = "Tel: ";

@@ -1,10 +1,10 @@
 <?php
 $l_subTit = "your place to learn Spanish";
 
-$l_icos['bot_inicio'] = "Home";
-$l_icos['bot_prof'] = "About the teacher";
-$l_icos['bot_curs'] = "Courses";
-$l_icos['bot_cont'] = "Contact";
+$l_botInicio = "Home";
+$l_botProf = "About the teacher";
+$l_botCurs = "Courses";
+$l_botCont = "Contact";
 
 $l_inicio = <<<inicio
 <p>Welcome!</p>
@@ -47,10 +47,10 @@ $l_curs = <<<cursos
 <p><a href="#" onclick="icoclick(3); return false;">Contact me</a> to get information about prices and special offers.</p>
 cursos;
 
-$l_cont['html'] = <<<contacto
+$l_contacto = <<<contacto
 <h4>Do you want to know more? </h4>
 <p>Don't hesitate to contact me!</p>
 <br /><br /><br />
 contacto;
 
-$l_cont['tel'] = "Phone: ";
+$l_tel = "Phone: ";
