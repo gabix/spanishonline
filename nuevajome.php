@@ -49,19 +49,19 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
                         <ul class="nav masthead-nav">
                             <li class="active" id="li_home">
                                 <img class="im_ico" src="img/casaB.png" alt="<?= $t->get('l_botInicio'); ?>" />
-                                <a href="#d_home" data-toggle="tab"><?= $t->get('l_botInicio'); ?></a>
+                                <a <?= $h->get('home')?>><?= $t->get('l_botInicio'); ?></a>
                             </li>
                             <li id="li_cursos">
                                 <img class="im_ico" src="img/pupitreB.png" alt="<?= $t->get('l_botCursos'); ?>" />
-                                <a href="#d_cursos" data-toggle="tab"><?= $t->get('l_botCursos'); ?></a>
+                                <a <?= $h->get('cursos')?>><?= $t->get('l_botCursos'); ?></a>
                             </li>
                             <li id="li_profe">
                                 <img class="im_ico" src="img/manzanaB.png" alt="<?= $t->get('l_botProfe'); ?>" />
-                                <a href="#d_profe" data-toggle="tab"><?= $t->get('l_botProfe'); ?></a>
+                                <a <?= $h->get('profe')?>><?= $t->get('l_botProfe'); ?></a>
                             </li>
                             <li id="li_contacto">
                                 <img class="im_ico" src="img/contactoB.png" alt="<?= $t->get('l_botContacto'); ?>" />
-                                <a href="#d_contacto" data-toggle="tab"><?= $t->get('l_botContacto'); ?></a>
+                                <a <?= $h->get('contacto')?>><?= $t->get('l_botContacto'); ?></a>
                             </li>
                         </ul>
                     </nav>

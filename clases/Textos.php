@@ -60,16 +60,12 @@ class Textos {
         }
     }
 
-    private function ReemplazaLinks(Hrefs $h) {
-
-    }
-
     /*
-     * acá tengo que implementar lo de extends
+     * @charly: acá tengo que implementar lo de extends
      * y es donde necesito tener ya instanseado la clase Href()
      */
     public function LlenarConLenguaje($l, Hrefs $h) {
-        /* esto ni lo mires, era para que cargue el lenguaje de en.html en vez de usar un PHP con variables declaradas
+        /* esto ni lo mires, era para que cargue el lenguaje de en.html en vez de usar un arch.php con variables declaradas
         no va por PUTO!!
         $paj = file_get_contents(APP_ROOT.DS.'lenguajes'.DS.$l.'.html');
 
@@ -95,6 +91,8 @@ class Textos {
         $props = array('l_subTit', 'l_botInicio', 'l_botProfe', 'l_botCursos', 'l_botContacto', 'l_inicio', 'l_profe', 'l_cursos', 'l_contacto', 'l_tel', 'l_lenguaje');
         foreach ($props as $var) {
             $val = $$var;
+
+            //@charly: esto es una poronga, reemplazo en cada vuelta de for
             $val = str_replace("#home", $h->get('home'), $val);
             $val = str_replace("#cursos", $h->get('cursos'), $val);
             $val = str_replace("#profe", $h->get('profe'), $val);
