@@ -13,18 +13,19 @@ class Textos {
     private $mail = "veronicahopp@gmail.com";
     private $description = "aprendizaje de espa&ntilde;ol, spanish learning";
     private $keywords = "espa&ntilde;ol, spanish, learning, aprender, aprendizaje, spanish online";
+    private $author = "Gabix - giopapini@yahoo.com.ar";
 
     private $l_subTit = "";
     private $l_botInicio = "";
-    private $l_botProf = "";
-    private $l_botCurs = "";
-    private $l_botCont = "";
+    private $l_botProfe = "";
+    private $l_botCursos = "";
+    private $l_botContacto = "";
     private $l_inicio = "";
-    private $l_prof = "";
-    private $l_curs = "";
+    private $l_profe = "";
+    private $l_cursos = "";
     private $l_contacto = "";
     private $l_tel = "";
-
+    private $l_lenguaje = "";
 
     /* excluime de get y set */
     private $excludeGet = array('excludeGet', 'excludeSet');
@@ -59,7 +60,11 @@ class Textos {
         }
     }
 
-    public function LlenarConLenguaje($l) {
+    private function ReemplazaLinks(Hrefs $h) {
+
+    }
+
+    public function LlenarConLenguaje($l, Hrefs $h) {
         /* no va por PUTO!!
         $paj = file_get_contents(APP_ROOT.DS.'lenguajes'.DS.$l.'.html');
 
@@ -80,9 +85,15 @@ class Textos {
 
         require_once(APP_ROOT.DS.'lenguajes'.DS.$l.'.php');
 
-        $props = array('l_subTit', 'l_botInicio', 'l_botProf', 'l_botCurs', 'l_botCont', 'l_inicio', 'l_prof', 'l_curs', 'l_contacto', 'l_tel');
+        if (null === $h) die("h no puede ser null");
+
+        $props = array('l_subTit', 'l_botInicio', 'l_botProfe', 'l_botCursos', 'l_botContacto', 'l_inicio', 'l_profe', 'l_cursos', 'l_contacto', 'l_tel', 'l_lenguaje');
         foreach ($props as $var) {
             $val = $$var;
+            $val = str_replace("#home", $h->get('home'), $val);
+            $val = str_replace("#cursos", $h->get('cursos'), $val);
+            $val = str_replace("#profe", $h->get('profe'), $val);
+            $val = str_replace("#contacto", $h->get('contacto'), $val);
 
             $this->set($var, $val);
         }

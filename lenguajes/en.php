@@ -2,20 +2,20 @@
 $l_subTit = "your place to learn Spanish";
 
 $l_botInicio = "Home";
-$l_botProf = "About the teacher";
-$l_botCurs = "Courses";
-$l_botCont = "Contact";
+$l_botProfe = "About the teacher";
+$l_botCursos = "Courses";
+$l_botContacto = "Contact";
 
 $l_inicio = <<<inicio
 <p>Welcome!</p>
 <p>If you want to learn Spanish, you have come to the right place.</p>
 <p>In &#34;Spanish Online&#34; you will learn not only the language but so much more: culture, history, tourism, art, music...</p>
-<p>&#34;Spanish Online&#34; offers dynamic and original <a href="#" onclick="icoclick(1); return false;">courses</a>, personalized to the needs and interests of each student.</p>
-<p>The <a href="#" onclick="icoclick(2); return false;">teacher</a> speaks Spanish as a native language. Besides, she has a broad experience and education in the field of teaching Spanish as a foreign language.</p>
-<p>Would you like to know more? Don't hesitate to <a href="#" onclick="icoclick(3); return false;">contact me</a>.</p>
+<p>&#34;Spanish Online&#34; offers dynamic and original <a #cursos">courses</a>, personalized to the needs and interests of each student.</p>
+<p>The <a #profe">teacher</a> speaks Spanish as a native language. Besides, she has a broad experience and education in the field of teaching Spanish as a foreign language.</p>
+<p>Would you like to know more? Don't hesitate to <a #contacto>contact me</a>.</p>
 inicio;
 
-$l_prof = <<<profe
+$l_profe = <<<profe
 <h4>About the teacher<img id="im_vero" src="img/vero.jpg" alt="mi_pic" /></h4>
 <p>Hi! I am Veronica and I come from Buenos Aires, Argentina. For more than 6 years now I have been working - with passion and joy - as a Spanish teacher.</p>
 <br /><br />
@@ -25,10 +25,10 @@ $l_prof = <<<profe
 <br />
 <p>My students say that I am a cheerful, patient and vocational teacher. </p>
 <br />
-<p><a href="#" onclick="icoclick(3); return false;">I hope to meet you soon!</a></p>
+<p><a #contacto>I hope to meet you soon!</a></p>
 profe;
 
-$l_curs = <<<cursos
+$l_cursos = <<<cursos
 <h2>Your Spanish course</h2>
 <h4>About the approach and methodology</h4>
 <br />
@@ -44,7 +44,7 @@ $l_curs = <<<cursos
     <li>general and special courses (conversation, grammar, exam preparation, literature, etc.)</li>
     <li>face-to-face and online (via skype) lessons.</li>
 </ul>
-<p><a href="#" onclick="icoclick(3); return false;">Contact me</a> to get information about prices and special offers.</p>
+<p><a #contacto>Contact me</a> to get information about prices and special offers.</p>
 cursos;
 
 $l_contacto = <<<contacto
@@ -54,3 +54,5 @@ $l_contacto = <<<contacto
 contacto;
 
 $l_tel = "Phone: ";
+
+$l_lenguaje = "Language:";

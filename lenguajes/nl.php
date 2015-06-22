@@ -2,20 +2,20 @@
 $l_subTit = "Jouw plek om Spaans te leren";
 
 $l_botInicio = "Home";
-$l_botProf = "De lerares";
-$l_botCurs = "Lessen";
-$l_botCont = "Contact";
+$l_botProfe = "De lerares";
+$l_botCursos = "Lessen";
+$l_botContacto = "Contact";
 
 $l_inicio = <<<inicio
 <p>Welkom!</p>
-<p>Als je geinteresseerd bent in de Spaanse taal dan ben je hier aan het juiste adres.
-    Bij Spanish Online leer je niet alleen de taal maar ook de cultuur, de historie, het toerisme, de kunst en de muziek kennen!</p>
-<p>We bieden originele en interactieve <a href="#" onclick="icoclick(1); return false;">lessen</a>, afgestemd op de specifieke behoeftes en interesses van de student.</p>
-<p>Spaans is in alle gevallen de moedertaal van de <a href="#" onclick="icoclick(2); return false;">lerares</a>. Bovendien heeft zij jarenlange ervaring in het begeleiden van studenten met het leren van de Spaanse taal.</p>
-<p>Meer informatie? Neem gerust <a href="#" onclick="icoclick(3); return false;">contact</a> met me op.</p>
+<p>Als je geinteresseerd bent in de Spaanse taal dan ben je hier aan het juiste adres.</p>
+<p>Bij Spanish Online leer je niet alleen de taal maar ook de cultuur, de historie, het toerisme, de kunst en de muziek kennen!</p>
+<p>We bieden originele en interactieve <a #cursos>lessen</a>, afgestemd op de specifieke behoeftes en interesses van de student.</p>
+<p>Spaans is in alle gevallen de moedertaal van de <a #profe>lerares</a>. Bovendien heeft zij jarenlange ervaring in het begeleiden van studenten met het leren van de Spaanse taal.</p>
+<p>Meer informatie? Neem gerust <a #contacto>contact</a> met me op.</p>
 inicio;
 
-$l_prof = <<<profe
+$l_profe = <<<profe
 <h4>De lerares<img id="im_vero" src="img/vero.jpg" alt="mi_pic" /></h4>
 <p>Hallo! Mijn naam is Verónica, ik kom uit Buenos Aires, Argentinië, en ik geef al sinds meer dan 6 jaar met veel plezier en passie les in Spaans als vreemde taal.</p>
 <br /><br />
@@ -25,10 +25,10 @@ $l_prof = <<<profe
 <br />
 <p>Mijn studenten noemen me een vrolijke geduldige lerares met ontzettend veel drive voor lesgeven.</p>
 <br />
-<p><a href="#" onclick="icoclick(3); return false;">Hoop je binnenkort te leren kennen!</a></p>
+<p><a #contacto>Hoop je binnenkort te leren kennen!</a></p>
 profe;
 
-$l_curs = <<<cursos
+$l_cursos = <<<cursos
 <h2>Jouw Spaanse les</h2>
 <h4>Over focus en methodologie</h4>
 <br />
@@ -44,7 +44,7 @@ $l_curs = <<<cursos
     <li>generieke en specifieke lessen (spreekvaardigheid, gramatica, voorbereiding op examens, literatuur, kunst, etc.)</li>
     <li>lessen in persoon of online (skype).</li>
 </ul>
-<p> Voor vragen over prijzen en speciale pakketten kunt u <a href="#" onclick="icoclick(3); return false;">contact</a> opnemen</p>
+<p> Voor vragen over prijzen en speciale pakketten kunt u <a #contacto>contact</a> opnemen</p>
 cursos;
 
 $l_contacto = <<<contacto
@@ -54,3 +54,6 @@ $l_contacto = <<<contacto
 contacto;
 
 $l_tel = "Telefoon: ";
+
+$l_lenguaje = "Taal:";
+

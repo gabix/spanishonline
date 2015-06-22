@@ -2,22 +2,21 @@
 $l_subTit = "tu lugar para aprender espa&ntilde;ol";
 
 $l_botInicio = "Inicio";
-$l_botProf = "Sobre la profesora";
-$l_botCurs = "Cursos";
-$l_botCont = "Contacto";
+$l_botProfe = "Sobre la profesora";
+$l_botCursos = "Cursos";
+$l_botContacto = "Contacto";
 
 $l_inicio = <<<inicio
 <p>&iexcl;Bienvenido/a!</p>
 <p>Si te interesa aprender espa&ntilde;ol, llegaste al lugar correcto.</p>
 <p>En Spanish Online podr&aacute;s aprender la lengua pero tambi&eacute;n mucho m&aacute;s: la cultura, la historia, el turismo, el arte, la m&uacute;sica...</p>
-<p>Ofrezco <a href="#" onclick="icoclick(1); return false;">cursos</a> din&aacute;micos y originales, hechos a la medida de las necesidades e intereses de cada estudiante.</p>
-<p><a href="#" onclick="icoclick(2); return false;">La profesora</a> habla espa&ntilde;ol como lengua nativa. Adem&aacute;s cuenta con una amplia experiencia y formaci&oacute;n en la ense&ntilde;anza del espa&ntilde;ol como lengua extranjera.</p>
-<p>&iquest;M&aacute;s informaci&oacute;n? No dudes en <a href="#" onclick="icoclick(3); return false;">contactarme</a>.</p>
+<p>Ofrezco <a #cursos>cursos</a> din&aacute;micos y originales, hechos a la medida de las necesidades e intereses de cada estudiante.</p>
+<p><a #profe>La profesora</a> habla espa&ntilde;ol como lengua nativa. Adem&aacute;s cuenta con una amplia experiencia y formaci&oacute;n en la ense&ntilde;anza del espa&ntilde;ol como lengua extranjera.</p>
+<p>&iquest;M&aacute;s informaci&oacute;n? No dudes en <a #contacto>contactarme</a>.</p>
 inicio;
 
-$l_prof = <<<profe
+$l_profe = <<<profe
 <h4>Sobre la profesora<img id="im_vero" src="img/vero.jpg" alt="mi_pic" /></h4>
-
 <p>&iexcl;Hola! Soy Ver&oacute;nica, vengo de Buenos Aires, Argentina, y hace m&aacute;s de 6 a&ntilde;os que me dedico con pasi&oacute;n y alegr&iacute;a a la ense&ntilde;anza del espa&ntilde;ol como lengua extranjera.
 <br /><br />
 Mi formaci&oacute;n universitaria comenz&oacute; con la carrera de Letras de la Universidad de Buenos Aires, de la cual me gradu&eacute; con honores. Luego, recib&iacute; una beca para realizar una maestr&iacute;a llamada &#34;Ense&ntilde;anza y aprendizaje del espa&ntilde;ol en contextos multiling&uuml;es e internacionales&#34;, gracias a la cual viv&iacute; y estudi&eacute; en Espa&ntilde;a, en Estados Unidos y en los Pa&iacute;ses Bajos. Tambi&eacute;n realic&eacute; el curso &#34;Formaci&oacute;n Inicial para Profesores de Espa&ntilde;ol como Lengua Extranjera&#34; del Instituto Cervantes y asist&iacute; a varias conferencias relacionadas con el espa&ntilde;ol y la ense&ntilde;anza de lenguas.</p>
@@ -26,10 +25,10 @@ Mi formaci&oacute;n universitaria comenz&oacute; con la carrera de Letras de la 
 <br />
 <p>Mis alumnos dicen que soy una profesora alegre, paciente y con much&iacute;sima vocaci&oacute;n por la ense&ntilde;anza.</p>
 <br />
-<p><a href="#" onclick="icoclick(3); return false;">&iexcl;Espero conocerte pronto!</a></p>
+<p><a #contacto>&iexcl;Espero conocerte pronto!</a></p>
 profe;
 
-$l_curs = <<<cursos
+$l_cursos = <<<cursos
 <h2>Tu curso de espa&ntilde;ol</h2>
 <h4>Sobre el enfoque y metodolog&iacute;a</h4>
 <br />
@@ -45,7 +44,7 @@ $l_curs = <<<cursos
     <li>cursos generales y especiales (de conversaci&oacute;n, gram&aacute;tica, preparaci&oacute;n de ex&aacute;menes, literatura, arte, etc.)</li>
     <li>presenciales y online (por skype).</li>
 </ul>
-<p><a href="#" onclick="icoclick(3); return false;">Cons&uacute;ltame</a> sobre precios y paquetes especiales.</p>
+<p><a #contacto>Cons&uacute;ltame</a> sobre precios y paquetes especiales.</p>
 cursos;
 
 $l_contacto = <<<contacto
@@ -55,3 +54,5 @@ $l_contacto = <<<contacto
 contacto;
 
 $l_tel = "Tel: ";
+
+$l_lenguaje = "Lenguaje:";

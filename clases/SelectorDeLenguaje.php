@@ -3,8 +3,8 @@
 class SelectorDeLenguaje {
     //TODO: COOKIES!!
 
-    private $_lenguajesQueHay = array('esp', 'eng', 'hol');
-    private $_defLang = "eng";
+    private $_lenguajesQueHay = array('es', 'en', 'nl');
+    private $_defLang = "en";
     private $_lenguaje = "";
 
     private function set_lenguaje($lenguaje) {
