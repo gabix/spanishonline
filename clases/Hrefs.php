@@ -3,6 +3,9 @@
  * User: gabix
  * Date: 22/06/15
  * Time: 17:08
+ * para generar los links de manera dinámica dependiendo de donde me encuentro -->
+ * --> para que el index.php ande como antes tengo que usar los "icoclick"
+ * --> para la nuevajome.php tengo que usar la  funcionalidad de tabs de jquery y bootstrap
  */
 class Hrefs {
 

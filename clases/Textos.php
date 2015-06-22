@@ -64,8 +64,13 @@ class Textos {
 
     }
 
+    /*
+     * acá tengo que implementar lo de extends
+     * y es donde necesito tener ya instanseado la clase Href()
+     */
     public function LlenarConLenguaje($l, Hrefs $h) {
-        /* no va por PUTO!!
+        /* esto ni lo mires, era para que cargue el lenguaje de en.html en vez de usar un PHP con variables declaradas
+        no va por PUTO!!
         $paj = file_get_contents(APP_ROOT.DS.'lenguajes'.DS.$l.'.html');
 
         $dom = new DOMDocument();
