@@ -35,7 +35,8 @@ body {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
     background-color: #dad3c3;
-    background: url(../img/twill.png) repeat;
+    background: url(../img/fondos/mona2.png) no-repeat;
+    background-size: cover;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
