@@ -137,10 +137,8 @@ class Loader {
      */
     public static function LoadItemByPath($path) {
         if (file_exists($path)) {
-            Debuguie::AddMsg("Loader - LoadItemByPath()", "return require($path)", "success");
             return require_once($path);
         } else {
-            Debuguie::AddMsg("Loader - LoadItemByPath()", "no existe el archivo ($path)", "warning");
             return false;
         }
     }

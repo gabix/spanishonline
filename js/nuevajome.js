@@ -1,41 +1,42 @@
 $(function(){
-    // para la rotación de la img de fondo
-    var fondos = ['img/fondos/mona1.png', 'img/fondos/mona2.png', 'img/fondos/merlu1.png'];
-    var i = 0;
-
     // para las tabs
     $(document).on('click.bs.tab.data-api', '[data-toggle="tab"], [data-toggle="tab"]', function (e) {
-        e.preventDefault()
+        e.preventDefault();
         $('ul.nav li a[href="' + $(this).attr('href') + '"]').tab('show');
+    });
 
-        CambiaFondo();
-    })
+    //el rota imgs
+    var fondos = [
+        'img/fondos/alFiruleteo.jpg',
+        'img/fondos/avatar.jpg',
+        'img/fondos/buHubuHuv1.jpg',
+        'img/fondos/merlu1.png',
+        'img/fondos/mona1.png',
+        'img/fondos/mona2.png',
+        'img/fondos/tortugo.jpg',
+        'img/fondos/unaRaveRural.jpg'
+    ];
 
-
-    /*
     var img = $('#im_fondo');
-    var cadaSegs = 3 * 1000;
+    var cadaSegs = 10 * 1000;
     var fadeSpeed = "slow";
     var i = 0;
 
     setInterval( function() {
+        CambiaFondo();
+    }, cadaSegs);
+
+    function CambiaFondo() {
         i = nextI(i, fondos.length);
         var nuevoSrc = fondos[i];
-        console.log(nuevoSrc);
-        CambiaFondo(nuevoSrc);
+        // console.log(nuevoSrc);
 
         // Fade the image out, then when done...
-        img.fadeOut(fadeSpeed, function() {
-            i = nextI(i, fondos.length);
-            var nuevoSrc = fondos[i];
-            console.log(nuevoSrc);
-
-            // Replace the src, then fade back in
-            img.css('background', 'url("'+nuevoSrc+'") no-repeat;');
-            img.fadeIn( fadeSpeed );
+        img.fadeOut(fadeSpeed, function () {
+            img.attr('src', nuevoSrc);
+            img.fadeIn(fadeSpeed);
         });
-    }, cadaSegs);
-    */
+    }
 
     function nextI(actI, arrLength) {
         if (actI === (arrLength - 1)) {
@@ -44,12 +45,4 @@ $(function(){
         return (actI + 1)
     }
 
-    function CambiaFondo(){
-        i = nextI(i, fondos.length);
-        var nuevoSrc = fondos[i];
-
-        $('body').css('background', 'url("'+nuevoSrc+'") no-repeat');
-        $('body').css('background-size', 'cover');
-        $('body').fadeIn();
-    }
 });

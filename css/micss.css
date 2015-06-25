@@ -24,7 +24,7 @@ body {
 }
 a {
     color: #CF2631;
-    border: 0px;
+    border: 0;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -44,7 +44,7 @@ hr {
 }
 
 h1 {
-    margin: 6px 10px 0px 10px;
+    margin: 6px 10px 0 10px;
 }
 h3 {
     margin: 3px 10px 3px 10px;
@@ -73,7 +73,7 @@ tr, td {
     padding: 1px
 }
 img {
-    border: 0px;
+    border: 0;
 }
 a.b_ico {
     filter:alpha(opacity=50);
@@ -94,8 +94,8 @@ a.b_ico.select {
     opacity: 0.8;
 }
 button.b_flechitas {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-style: none;
     background  : none;
     cursor  : pointer;
@@ -107,7 +107,7 @@ img.im_ico {
 img.im_contacto {
     width: 20px;
     height: 20px;
-    margin: 0px 10px 0px 0px;
+    margin: 0 10px 0 0;
     vertical-align: middle;
 }
 img.im_banderitas {
@@ -117,7 +117,7 @@ img.im_banderitas {
 }
 #im_vero {
     height: 250px;
-    margin: 5px 0px 5px 15px;
+    margin: 5px 0 5px 15px;
     padding: 5px;
     float:right;
     border: 2px solid #5f5f5f;
@@ -150,18 +150,18 @@ img.im_flechitas {
 #d_icos {
     float: left;
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0 0 0;
     width: 90px;
     height: 280px;
 }
 div.d_contenido {
     float: right;
-    margin: 0px 0px 0px 5px;
+    margin: 0 0 0 5px;
     width: 500px;
 }
 #d_felchitas {
     float: right;
-    margin: 10px 0px 10px 5px;
+    margin: 10px 0 10px 5px;
     width: 500px;
 }
 #d_banderitas {

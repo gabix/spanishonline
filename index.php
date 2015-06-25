@@ -31,13 +31,13 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
     <div id="d_tarj">
         <div id="d_icos">
             <a <?= $h->get('home')?> id="ico0" class="select b_ico" title="<?= $t->get('l_botInicio'); ?>">
-                <img class="im_ico" src="img/House_outline_512.png" alt="<?= $t->get('l_botInicio'); ?>" /></a>
+                <img class="im_ico" src="img/menuIcos/negro_casa.png" alt="<?= $t->get('l_botInicio'); ?>" /></a>
             <a <?= $h->get('cursos')?> id="ico1" class="b_ico" title="<?= $t->get('l_botCursos'); ?>">
-                <img class="im_ico" src="img/seat7.png" alt="<?= $t->get('l_botCursos'); ?>" /></a>
+                <img class="im_ico" src="img/menuIcos/negro_pupitre.png" alt="<?= $t->get('l_botCursos'); ?>" /></a>
             <a <?= $h->get('profe')?> id="ico2" class="b_ico" title="<?= $t->get('l_botProfe'); ?>">
-                <img class="im_ico" src="img/fruit106.png" alt="<?= $t->get('l_botProfe'); ?>" /></a>
+                <img class="im_ico" src="img/menuIcos/negro_manzana.png" alt="<?= $t->get('l_botProfe'); ?>" /></a>
             <a <?= $h->get('contacto')?> id="ico3" class="b_ico" title="<?= $t->get('l_botContacto'); ?>">
-                <img class="im_ico" src="img/student72.png" alt="<?= $t->get('l_botContacto'); ?>" /></a>
+                <img class="im_ico" src="img/menuIcos/negro_contacto.png" alt="<?= $t->get('l_botContacto'); ?>" /></a>
         </div>
 
         <div id="d_cont0" class="d_contenido">

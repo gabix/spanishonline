@@ -9,7 +9,7 @@ class Textos {
     /* datos pa tooodo */
     private $title = "Spanish Online";
     private $usuario_skype = "veronicahopp";
-    private $telefono = "(+5411) 69089479";
+    private $telefono = "(+5411) 6908-9479";
     private $mail = "veronicahopp@gmail.com";
     private $description = "aprendizaje de espa&ntilde;ol, spanish learning";
     private $keywords = "espa&ntilde;ol, spanish, learning, aprender, aprendizaje, spanish online";
@@ -41,6 +41,7 @@ class Textos {
             return $this->$prop;
         }
         trigger_error("get_$prop excluido, ");
+        return false;
     }
 
     public function set($prop, $val) {
@@ -52,6 +53,7 @@ class Textos {
             return $this->$prop = $val;
         }
         trigger_error("set_$prop excluido, ");
+        return false;
     }
 
     public function set_props($params) {
