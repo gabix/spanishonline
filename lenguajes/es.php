@@ -16,7 +16,7 @@ $l_inicio = <<<inicio
 inicio;
 
 $l_profe = <<<profe
-            <h4>Sobre la profesora<img id="im_vero" src="img/vero.jpg" alt="mi_pic" /></h4>
+            <h4>Sobre la profesora<img id="im_vero" src="img/vero/vero.jpg" alt="mi_pic" /></h4>
             <p>&iexcl;Hola! Soy Ver&oacute;nica, vengo de Buenos Aires, Argentina, y hace m&aacute;s de 6 a&ntilde;os que me dedico con pasi&oacute;n y alegr&iacute;a a la ense&ntilde;anza del espa&ntilde;ol como lengua extranjera.
             <br /><br />
             Mi formaci&oacute;n universitaria comenz&oacute; con la carrera de Letras de la Universidad de Buenos Aires, de la cual me gradu&eacute; con honores. Luego, recib&iacute; una beca para realizar una maestr&iacute;a llamada &#34;Ense&ntilde;anza y aprendizaje del espa&ntilde;ol en contextos multiling&uuml;es e internacionales&#34;, gracias a la cual viv&iacute; y estudi&eacute; en Espa&ntilde;a, en Estados Unidos y en los Pa&iacute;ses Bajos. Tambi&eacute;n realic&eacute; el curso &#34;Formaci&oacute;n Inicial para Profesores de Espa&ntilde;ol como Lengua Extranjera&#34; del Instituto Cervantes y asist&iacute; a varias conferencias relacionadas con el espa&ntilde;ol y la ense&ntilde;anza de lenguas.</p>

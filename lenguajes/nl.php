@@ -16,7 +16,7 @@ $l_inicio = <<<inicio
 inicio;
 
 $l_profe = <<<profe
-            <h4>De lerares<img id="im_vero" src="img/vero.jpg" alt="mi_pic" /></h4>
+            <h4>De lerares<img id="im_vero" src="img/vero/vero.jpg" alt="mi_pic" /></h4>
             <p>Hallo! Mijn naam is Verónica, ik kom uit Buenos Aires, Argentinië, en ik geef al sinds meer dan 6 jaar met veel plezier en passie les in Spaans als vreemde taal.</p>
             <br /><br />
             <p>Op de universteit van Buenos Aires begon ik met literatuur, waar ik met lof afstudeerde. Vervolgens ontving ik een studie beurs om een master te doen genaamd “Learning and teaching Spanish in multilingual and international contexts”. Hierdoor kreeg ik de mogelijkheid om in Spanje, de Verenigde Staten en Nederland te wonen. Ik heb ook de cursus  “Basisvorming voor Spaans leraren” van het Instituut Cervantes, dat wereldwijd de Spaanse taal promoot.</p>
