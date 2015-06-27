@@ -95,10 +95,21 @@ class Textos {
             $val = $$var;
 
             //@charly: esto es una poronga, reemplazo en cada vuelta de for
+            /* esto de aca arriba 
             $val = str_replace("#home", $h->get('home'), $val);
             $val = str_replace("#cursos", $h->get('cursos'), $val);
             $val = str_replace("#profe", $h->get('profe'), $val);
             $val = str_replace("#contacto", $h->get('contacto'), $val);
+            
+            es equivalente a esto de aca abajo:
+            */
+            $tokens = array(
+                '#home','#cursos','#profe','#contacto'
+            );
+            $reemplazos = array(
+                $h->get('home'), $h->get('cursos'), $h->get('profe'), $h->get('contacto')
+            );
+            $val = str_replace($tokens, $reemplazos, $val);
 
             $this->set($var, $val);
         }
