@@ -67,25 +67,6 @@ class Textos {
      * y es donde necesito tener ya instanseado la clase Href()
      */
     public function LlenarConLenguaje($l, Hrefs $h) {
-        /* esto ni lo mires, era para que cargue el lenguaje de en.html en vez de usar un arch.php con variables declaradas
-        no va por PUTO!!
-        $paj = file_get_contents(APP_ROOT.DS.'lenguajes'.DS.$l.'.html');
-
-        $dom = new DOMDocument();
-        libxml_use_internal_errors(true);
-        $dom->preserveWhiteSpace = true;
-        $dom->formatOutput       = true;
-        $dom->loadHTML($paj);
-
-        $ids = array('l_subTit', 'l_botInicio', 'l_botProf', 'l_botCurs', 'l_botCont', 'l_inicio', 'l_prof', 'l_curs', 'l_contacto', 'l_tel');
-        foreach ($ids as $var) {
-            $node = $dom->getElementById($var);
-            $val = $node->textContent;
-
-            echo $node->;
-            $this->set($var, $val);
-        */
-
         require_once(APP_ROOT.DS.'lenguajes'.DS.$l.'.php');
 
         if (null === $h) die("h no puede ser null");
@@ -103,12 +84,8 @@ class Textos {
             
             es equivalente a esto de aca abajo:
             */
-            $tokens = array(
-                '#home','#cursos','#profe','#contacto'
-            );
-            $reemplazos = array(
-                $h->get('home'), $h->get('cursos'), $h->get('profe'), $h->get('contacto')
-            );
+            $tokens = array('#home','#cursos','#profe','#contacto');
+            $reemplazos = array($h->get('home'), $h->get('cursos'), $h->get('profe'), $h->get('contacto'));
             $val = str_replace($tokens, $reemplazos, $val);
 
             $this->set($var, $val);
