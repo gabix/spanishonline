@@ -3,15 +3,15 @@ require_once('config'.DIRECTORY_SEPARATOR.'config.php');
 $p = "index.php";
 
 $h = new Hrefs();
-$h->LlenarParaIcoclick();
-
 $l = new SelectorDeLenguaje();
-$t = new Textos();
-$t->LlenarConLenguaje($l->get_lenguaje(), $h);
+$l = $l->get_lenguaje();
+
+$h->LlenarParaIcoclick();
+$t = new Textos($l, $h);
 
 ?>
 <!DOCTYPE html>
-<html lang="<?= $l->get_lenguaje(); ?>">
+<html lang="<?= $l ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -30,48 +30,48 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
 <body>
     <div id="d_tarj">
         <div id="d_icos">
-            <a <?= $h->get('home')?> id="ico0" class="select b_ico" title="<?= $t->get('l_botInicio'); ?>">
-                <img class="im_ico" src="img/menuIcos/negro_casa.png" alt="<?= $t->get('l_botInicio'); ?>" /></a>
-            <a <?= $h->get('cursos')?> id="ico1" class="b_ico" title="<?= $t->get('l_botCursos'); ?>">
-                <img class="im_ico" src="img/menuIcos/negro_pupitre.png" alt="<?= $t->get('l_botCursos'); ?>" /></a>
-            <a <?= $h->get('profe')?> id="ico2" class="b_ico" title="<?= $t->get('l_botProfe'); ?>">
-                <img class="im_ico" src="img/menuIcos/negro_manzana.png" alt="<?= $t->get('l_botProfe'); ?>" /></a>
-            <a <?= $h->get('contacto')?> id="ico3" class="b_ico" title="<?= $t->get('l_botContacto'); ?>">
-                <img class="im_ico" src="img/menuIcos/negro_contacto.png" alt="<?= $t->get('l_botContacto'); ?>" /></a>
+            <a <?= $h->get('home')?> id="ico0" class="select b_ico" title="<?= $t->get('botInicio'); ?>">
+                <img class="im_ico" src="img/menuIcos/negro_casa.png" alt="<?= $t->get('botInicio'); ?>" /></a>
+            <a <?= $h->get('cursos')?> id="ico1" class="b_ico" title="<?= $t->get('botCursos'); ?>">
+                <img class="im_ico" src="img/menuIcos/negro_pupitre.png" alt="<?= $t->get('botCursos'); ?>" /></a>
+            <a <?= $h->get('profe')?> id="ico2" class="b_ico" title="<?= $t->get('botProfe'); ?>">
+                <img class="im_ico" src="img/menuIcos/negro_manzana.png" alt="<?= $t->get('botProfe'); ?>" /></a>
+            <a <?= $h->get('contacto')?> id="ico3" class="b_ico" title="<?= $t->get('botContacto'); ?>">
+                <img class="im_ico" src="img/menuIcos/negro_contacto.png" alt="<?= $t->get('botContacto'); ?>" /></a>
         </div>
 
         <div id="d_cont0" class="d_contenido">
             <h1><?= $t->get('title') ?></h1>
-            <h3><?= $t->get('l_subTit'); ?></h3>
+            <h3><?= $t->get('subTit'); ?></h3>
             <hr />
-            <?= $t->get('l_inicio'); ?>
+            <?= $t->get('inicio'); ?>
         </div>
 
         <div id="d_cont1" class="d_contenido" style="display:none">
             <h1><?= $t->get('title') ?></h1>
-            <h3><?= $t->get('l_subTit'); ?></h3>
+            <h3><?= $t->get('subTit'); ?></h3>
             <hr />
-            <?= $t->get('l_cursos'); ?>
+            <?= $t->get('cursos'); ?>
         </div>
 
         <div id="d_cont2" class="d_contenido" style="display:none">
             <h1><?= $t->get('title') ?></h1>
-            <h3><?= $t->get('l_subTit'); ?></h3>
+            <h3><?= $t->get('subTit'); ?></h3>
             <hr />
-            <?= $t->get('l_profe'); ?>
+            <?= $t->get('profe'); ?>
         </div>
 
         <div id="d_cont3" class="d_contenido" style="display:none">
             <h1><?= $t->get('title') ?></h1>
-            <h3><?= $t->get('l_subTit'); ?></h3>
+            <h3><?= $t->get('subTit'); ?></h3>
             <hr />
-            <?= $t->get('l_contacto'); ?>
+            <?= $t->get('contacto'); ?>
             <p class="p_it"><img class="im_contacto" src="img/mail-forward-3.png" alt="E-mail: " /><a href="mailto:<?= $t->get('mail') ?>?subject=Consulta%20(Ida%20y%20Vuelta%20site)">veronicahopp@gmail.com</a></p>
-            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?= $t->get('l_tel'); ?>" /><?= $t->get('telefono') ?></p>
+            <p class="p_it"><img class="im_contacto" src="img/phone-2.png" alt="<?= $t->get('tel'); ?>" /><?= $t->get('telefono') ?></p>
             <p class="p_it"><img class="im_contacto" src="img/skype.png" alt="Skype: " /><?= $t->get('usuario_skype') ?></p>
         </div>
         
-        <div id="d_felchitas">
+        <div id="d_flechitas">
             <button class="b_flechitas" onclick="flechlick(-1)"><img class="im_flechitas" src="img/arrLeft.png" alt="left" /></button>
             <button class="b_flechitas" onclick="flechlick(1)"><img class="im_flechitas" src="img/arrRight.png" alt="right" /></button>
         </div>
@@ -88,4 +88,3 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
 <script type="text/javascript" src="js/mijs.js"></script>
 </body>
 </html>
-

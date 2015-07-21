@@ -3,14 +3,14 @@ require_once('config'.DIRECTORY_SEPARATOR.'config.php');
 $p = "nuevajome.php";
 
 $h = new Hrefs();
-$h->LlenarParaBootstrapTabs();
-
 $l = new SelectorDeLenguaje();
-$t = new Textos();
-$t->LlenarConLenguaje($l->get_lenguaje(), $h);
+$l = $l->get_lenguaje();
+
+$h->LlenarParaBootstrapTabs();
+$t = new Textos($l, $h);
 ?>
 <!DOCTYPE html>
-<html lang="<?= $l->get_lenguaje(); ?>">
+<html lang="<?= $l ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -51,20 +51,20 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
             <h3 class="masthead-brand"><?= $t->get('title') ?></h3>
             <ul class="nav masthead-nav">
                 <li class="active" id="li_home">
-                    <img class="im_ico" src="img/menuIcos/blanco_casa.png" alt="<?= $t->get('l_botInicio'); ?>" />
-                    <a <?= $h->get('home')?>><?= $t->get('l_botInicio'); ?></a>
+                    <img class="im_ico" src="img/menuIcos/blanco_casa.png" alt="<?= $t->get('botInicio'); ?>" />
+                    <a <?= $h->get('home')?>><?= $t->get('botInicio'); ?></a>
                 </li>
                 <li id="li_cursos">
-                    <img class="im_ico" src="img/menuIcos/blanco_pupitre.png" alt="<?= $t->get('l_botCursos'); ?>" />
-                    <a <?= $h->get('cursos')?>><?= $t->get('l_botCursos'); ?></a>
+                    <img class="im_ico" src="img/menuIcos/blanco_pupitre.png" alt="<?= $t->get('botCursos'); ?>" />
+                    <a <?= $h->get('cursos')?>><?= $t->get('botCursos'); ?></a>
                 </li>
                 <li id="li_profe">
-                    <img class="im_ico" src="img/menuIcos/blanco_manzana.png" alt="<?= $t->get('l_botProfe'); ?>" />
-                    <a <?= $h->get('profe')?>><?= $t->get('l_botProfe'); ?></a>
+                    <img class="im_ico" src="img/menuIcos/blanco_manzana.png" alt="<?= $t->get('botProfe'); ?>" />
+                    <a <?= $h->get('profe')?>><?= $t->get('botProfe'); ?></a>
                 </li>
                 <li id="li_contacto">
-                    <img class="im_ico" src="img/menuIcos/blanco_contacto.png" alt="<?= $t->get('l_botContacto'); ?>" />
-                    <a <?= $h->get('contacto')?>><?= $t->get('l_botContacto'); ?></a>
+                    <img class="im_ico" src="img/menuIcos/blanco_contacto.png" alt="<?= $t->get('botContacto'); ?>" />
+                    <a <?= $h->get('contacto')?>><?= $t->get('botContacto'); ?></a>
                 </li>
             </ul>
         </nav>
@@ -74,34 +74,34 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
 <!-- aca las tabs!! -->
 <div id="myTabContent" class="inner cover tab-content">
     <div id="d_home" class="tab-pane fade in active" role="tabpanel">
-        <h1><?= $t->get('l_subTit'); ?></h1>
+        <h1><?= $t->get('subTit'); ?></h1>
         <hr />
         <div class="text-justify">
-<?= $t->get('l_inicio'); ?>
+<?= $t->get('inicio'); ?>
         </div>
     </div>
 
     <div id="d_cursos" class="tab-pane fade" role="tabpanel">
-        <h1><?= $t->get('l_subTit'); ?></h1>
+        <h1><?= $t->get('subTit'); ?></h1>
         <hr />
         <div class="text-justify">
-<?= $t->get('l_cursos'); ?>
+<?= $t->get('cursos'); ?>
         </div>
     </div>
 
     <div id="d_profe" class="tab-pane fade" role="tabpanel">
-        <h1><?= $t->get('l_subTit'); ?></h1>
+        <h1><?= $t->get('subTit'); ?></h1>
         <hr />
         <div class="text-justify">
-<?= $t->get('l_profe'); ?>
+<?= $t->get('profe'); ?>
         </div>
     </div>
 
     <div id="d_contacto" class="tab-pane fade" role="tabpanel">
-        <h1><?= $t->get('l_subTit'); ?></h1>
+        <h1><?= $t->get('subTit'); ?></h1>
         <hr />
         <div class="text-justify">
-<?= $t->get('l_contacto'); ?>
+<?= $t->get('contacto'); ?>
 
             <ul class="fa-ul">
                 <li>
@@ -125,7 +125,7 @@ $t->LlenarConLenguaje($l->get_lenguaje(), $h);
 <div class="mastfoot">
     <div class="inner">
         <p>
-            <?= $t->get('l_lenguaje') ?>:&nbsp;&nbsp;
+            <?= $t->get('lenguaje') ?>:&nbsp;&nbsp;
             <a href="<?= $p ?>?l=es"><img class="im_banderitas" src="img/flags/flags-spain.png" alt="espa&ntilde;ol" /></a>
             &middot;
             <a href="<?= $p ?>?l=en"><img class="im_banderitas" src="img/flags/flags-united_kingdom.png" alt="english" /></a>

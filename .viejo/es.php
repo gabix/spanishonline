@@ -1,12 +1,12 @@
 <?php
-$_txt['subTit'] = "tu lugar para aprender espa&ntilde;ol";
+$l_subTit = "tu lugar para aprender espa&ntilde;ol";
 
-$_txt['botInicio'] = "Inicio";
-$_txt['botProfe'] = "Sobre la profesora";
-$_txt['botCursos'] = "Cursos";
-$_txt['botContacto'] = "Contacto";
+$l_botInicio = "Inicio";
+$l_botProfe = "Sobre la profesora";
+$l_botCursos = "Cursos";
+$l_botContacto = "Contacto";
 
-$_txt['inicio'] = <<<inicio
+$l_inicio = <<<inicio
             <p>&iexcl;Bienvenido/a!</p>
             <p>Si te interesa aprender espa&ntilde;ol, llegaste al lugar correcto.</p>
             <p>En Spanish Online podr&aacute;s aprender la lengua pero tambi&eacute;n mucho m&aacute;s: la cultura, la historia, el turismo, el arte, la m&uacute;sica...</p>
@@ -15,7 +15,7 @@ $_txt['inicio'] = <<<inicio
             <p>&iquest;M&aacute;s informaci&oacute;n? No dudes en <a #contacto>contactarme</a>.</p>
 inicio;
 
-$_txt['profe'] = <<<profe
+$l_profe = <<<profe
             <h4>Sobre la profesora<img id="im_vero" src="img/vero/vero.jpg" alt="mi_pic" /></h4>
             <p>&iexcl;Hola! Soy Ver&oacute;nica, vengo de Buenos Aires, Argentina, y hace m&aacute;s de 6 a&ntilde;os que me dedico con pasi&oacute;n y alegr&iacute;a a la ense&ntilde;anza del espa&ntilde;ol como lengua extranjera.
             <br /><br />
@@ -28,7 +28,7 @@ $_txt['profe'] = <<<profe
             <p><a #contacto>&iexcl;Espero conocerte pronto!</a></p>
 profe;
 
-$_txt['cursos'] = <<<cursos
+$l_cursos = <<<cursos
             <h2>Tu curso de espa&ntilde;ol</h2>
             <h4>Sobre el enfoque y metodolog&iacute;a</h4>
             <br />
@@ -47,12 +47,12 @@ $_txt['cursos'] = <<<cursos
             <p><a #contacto>Cons&uacute;ltame</a> sobre precios y paquetes especiales.</p>
 cursos;
 
-$_txt['contacto'] = <<<contacto
+$l_contacto = <<<contacto
             <h4>&iquest;M&aacute;s informaci&oacute;n?</h4>
             <p>No dudes en contactarme.</p>
             <br /><br /><br />
 contacto;
 
-$_txt['tel'] = "Tel: ";
+$l_tel = "Tel: ";
 
-$_txt['lenguaje'] = "Lenguaje:";
+$l_lenguaje = "Lenguaje:";

@@ -1,12 +1,12 @@
 <?php
-$_txt['subTit'] = "Jouw plek om Spaans te leren";
+$l_subTit = "Jouw plek om Spaans te leren";
 
-$_txt['botInicio'] = "Home";
-$_txt['botProfe'] = "De lerares";
-$_txt['botCursos'] = "Lessen";
-$_txt['botContacto'] = "Contact";
+$l_botInicio = "Home";
+$l_botProfe = "De lerares";
+$l_botCursos = "Lessen";
+$l_botContacto = "Contact";
 
-$_txt['inicio'] = <<<inicio
+$l_inicio = <<<inicio
 <p>Welkom!</p>
             <p>Als je geinteresseerd bent in de Spaanse taal dan ben je hier aan het juiste adres.</p>
             <p>Bij Spanish Online leer je niet alleen de taal maar ook de cultuur, de historie, het toerisme, de kunst en de muziek kennen!</p>
@@ -15,7 +15,7 @@ $_txt['inicio'] = <<<inicio
             <p>Meer informatie? Neem gerust <a #contacto>contact</a> met me op.</p>
 inicio;
 
-$_txt['profe'] = <<<profe
+$l_profe = <<<profe
             <h4>De lerares<img id="im_vero" src="img/vero/vero.jpg" alt="mi_pic" /></h4>
             <p>Hallo! Mijn naam is Verónica, ik kom uit Buenos Aires, Argentinië, en ik geef al sinds meer dan 6 jaar met veel plezier en passie les in Spaans als vreemde taal.</p>
             <br /><br />
@@ -28,7 +28,7 @@ $_txt['profe'] = <<<profe
             <p><a #contacto>Hoop je binnenkort te leren kennen!</a></p>
 profe;
 
-$_txt['cursos'] = <<<cursos
+$l_cursos = <<<cursos
             <h2>Jouw Spaanse les</h2>
             <h4>Over focus en methodologie</h4>
             <br />
@@ -47,13 +47,13 @@ $_txt['cursos'] = <<<cursos
             <p> Voor vragen over prijzen en speciale pakketten kunt u <a #contacto>contact</a> opnemen</p>
 cursos;
 
-$_txt['contacto'] = <<<contacto
+$l_contacto = <<<contacto
             <h4>Meer informatie?</h4>
             <p>Neem gerust contact met me op.</p>
             <br /><br /><br />
 contacto;
 
-$_txt['tel'] = "Telefoon: ";
+$l_tel = "Telefoon: ";
 
-$_txt['lenguaje'] = "Taal:";
+$l_lenguaje = "Taal:";
 

@@ -1,12 +1,12 @@
 <?php
-$_txt['subTit'] = "your place to learn Spanish";
+$l_subTit = "your place to learn Spanish";
 
-$_txt['botInicio'] = "Home";
-$_txt['botProfe'] = "About the teacher";
-$_txt['botCursos'] = "Courses";
-$_txt['botContacto'] = "Contact";
+$l_botInicio = "Home";
+$l_botProfe = "About the teacher";
+$l_botCursos = "Courses";
+$l_botContacto = "Contact";
 
-$_txt['inicio'] = <<<inicio
+$l_inicio = <<<inicio
             <p>Welcome!</p>
             <p>If you want to learn Spanish, you have come to the right place.</p>
             <p>In &#34;Spanish Online&#34; you will learn not only the language but so much more: culture, history, tourism, art, music...</p>
@@ -15,7 +15,7 @@ $_txt['inicio'] = <<<inicio
             <p>Would you like to know more? Don't hesitate to <a #contacto>contact me</a>.</p>
 inicio;
 
-$_txt['profe'] = <<<profe
+$l_profe = <<<profe
             <h4>About the teacher<img id="im_vero" src="img/vero/vero.jpg" alt="mi_pic" /></h4>
             <p>Hi! I am Veronica and I come from Buenos Aires, Argentina. For more than 6 years now I have been working - with passion and joy - as a Spanish teacher.</p>
             <br /><br />
@@ -28,7 +28,7 @@ $_txt['profe'] = <<<profe
             <p><a #contacto>I hope to meet you soon!</a></p>
 profe;
 
-$_txt['cursos'] = <<<cursos
+$l_cursos = <<<cursos
             <h2>Your Spanish course</h2>
             <h4>About the approach and methodology</h4>
             <br />
@@ -47,12 +47,12 @@ $_txt['cursos'] = <<<cursos
             <p><a #contacto>Contact me</a> to get information about prices and special offers.</p>
 cursos;
 
-$_txt['contacto'] = <<<contacto
+$l_contacto = <<<contacto
             <h4>Do you want to know more? </h4>
             <p>Don't hesitate to contact me!</p>
             <br /><br /><br />
 contacto;
 
-$_txt['tel'] = "Phone: ";
+$l_tel = "Phone: ";
 
-$_txt['lenguaje'] = "Language:";
+$l_lenguaje = "Language:";

@@ -6,89 +6,43 @@
  */
 class Textos {
 
-    /* datos pa tooodo */
-    private $title = "Spanish Online";
-    private $usuario_skype = "veronicahopp";
-    private $telefono = "(+5411) 6908-9479";
-    private $mail = "veronicahopp@gmail.com";
-    private $description = "aprendizaje de espa&ntilde;ol, spanish learning";
-    private $keywords = "espa&ntilde;ol, spanish, learning, aprender, aprendizaje, spanish online";
-    private $author = "Gabix - giopapini@yahoo.com.ar";
+    private $_txt = array();
 
-    private $l_subTit = "";
-    private $l_botInicio = "";
-    private $l_botProfe = "";
-    private $l_botCursos = "";
-    private $l_botContacto = "";
-    private $l_inicio = "";
-    private $l_profe = "";
-    private $l_cursos = "";
-    private $l_contacto = "";
-    private $l_tel = "";
-    private $l_lenguaje = "";
+    public function get($key) {
+        try {
+            return $this->_txt[$key];
 
-    /* excluime de get y set */
-    private $excludeGet = array('excludeGet', 'excludeSet');
-    private $excludeSet = array('excludeGet', 'excludeSet');
-
-    /* getters y setters */
-    public function get($prop) {
-        if (!isset($this->$prop)) {
-            trigger_error("Err: No existe la propiedad $prop, en get.");
-            return false;
-        }
-        if (!in_array((string) $prop, $this->excludeGet)) {
-            return $this->$prop;
-        }
-        trigger_error("get_$prop excluido, ");
-        return false;
-    }
-
-    public function set($prop, $val) {
-        if (!isset($this->$prop)) {
-            trigger_error("Err: No existe la porpiedad $prop, en set.");
-            return false;
-        }
-        if (!in_array($prop, $this->excludeSet)) {
-            return $this->$prop = $val;
-        }
-        trigger_error("set_$prop excluido, ");
-        return false;
-    }
-
-    public function set_props($params) {
-        foreach ($params as $prop => $val) {
-            $this->set($prop, $val);
+        } catch (Exception $e) {
+            die('Pinché en Textos()');
         }
     }
 
-    /*
-     * @charly: acá tengo que implementar lo de extends
-     * y es donde necesito tener ya instanseado la clase Href()
-     */
-    public function LlenarConLenguaje($l, Hrefs $h) {
+    public function __construct($l, Hrefs $h) {
+        $this->_txt['title'] = "Spanish Online";
+        $this->_txt['usuario_skype'] = "veronicahopp";
+        $this->_txt['telefono'] = "(+5411) 6908-9479";
+        $this->_txt['mail'] = "veronicahopp@gmail.com";
+        $this->_txt['description'] = "aprendizaje de espa&ntilde;ol, spanish learning";
+        $this->_txt['keywords'] = "espa&ntilde;ol, spanish, learning, aprender, aprendizaje, spanish online";
+        $this->_txt['author'] = "Gabix - giopapini@yahoo.com.ar";
+
+        $this->LlenarConLenguaje($l, $h);
+    }
+
+    private function LlenarConLenguaje($l, Hrefs $h) {
         require_once(APP_ROOT.DS.'lenguajes'.DS.$l.'.php');
 
-        if (null === $h) die("h no puede ser null");
+        while (list($k, $val) = each($_txt)) {
+            $val = $this->ReemplazarPorLinks($h, $val);
 
-        $props = array('l_subTit', 'l_botInicio', 'l_botProfe', 'l_botCursos', 'l_botContacto', 'l_inicio', 'l_profe', 'l_cursos', 'l_contacto', 'l_tel', 'l_lenguaje');
-        foreach ($props as $var) {
-            $val = $$var;
-
-            //@charly: esto es una poronga, reemplazo en cada vuelta de for
-            /* esto de aca arriba 
-            $val = str_replace("#home", $h->get('home'), $val);
-            $val = str_replace("#cursos", $h->get('cursos'), $val);
-            $val = str_replace("#profe", $h->get('profe'), $val);
-            $val = str_replace("#contacto", $h->get('contacto'), $val);
-            
-            es equivalente a esto de aca abajo:
-            */
-            $tokens = array('#home','#cursos','#profe','#contacto');
-            $reemplazos = array($h->get('home'), $h->get('cursos'), $h->get('profe'), $h->get('contacto'));
-            $val = str_replace($tokens, $reemplazos, $val);
-
-            $this->set($var, $val);
+            $this->_txt[$k] = $val;
         }
+    }
+
+    private function ReemplazarPorLinks(Hrefs $h, $str){
+        $_str_a_reemplazar = array('#home','#cursos','#profe','#contacto');
+        $_reemplazar_por = array($h->get('home'), $h->get('cursos'), $h->get('profe'), $h->get('contacto'));
+
+        return str_replace($_str_a_reemplazar, $_reemplazar_por, $str);
     }
 }
